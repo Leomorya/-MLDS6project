@@ -1,25 +1,7 @@
 # Definición de los datos
 
 ## Origen de los datos
-
-- [ ] Especificar la fuente de los datos y la forma en que se obtuvieron. 
+Los datos fueron proporcionados por un banco como examen de admisión para el cargo como cientifico de datos, parecen ser tomados de un banco portugues, ya que el siguiente proyecto presenta un conjunto de datos similar [link](https://medium.com/analytics-vidhya/term-deposit-opening-decision-f57776b88453), los datos de este proyecto se pueden descargar en el siguiente [datos](https://www.mediafire.com/folder/xzpcnokbul9ea/data).
 
 ## Especificación de los scripts para la carga de datos
-
-- [ ] Especificar los scripts utilizados para la carga de los datos. 
-
-## Referencias a rutas o bases de datos origen y destino
-
-- [ ] Especificar las rutas o bases de datos de origen y destino para los datos.
-
-### Rutas de origen de datos
-
-- [ ] Especificar la ubicación de los archivos de origen de los datos.
-- [ ] Especificar la estructura de los archivos de origen de los datos.
-- [ ] Describir los procedimientos de transformación y limpieza de los datos.
-
-### Base de datos de destino
-
-- [ ] Especificar la base de datos de destino para los datos.
-- [ ] Especificar la estructura de la base de datos de destino.
-- [ ] Describir los procedimientos de carga y transformación de los datos en la base de datos de destino.
+Para la carga de datos en el proyecto se puede utilizar el siguiente scrip que se encuentra en el repositorio de los scrips del proyecto [link](https://github.com/Leomorya/-MLDS6project/blob/master/scripts/data_acquisition/descarga_data.py)
