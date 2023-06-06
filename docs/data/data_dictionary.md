@@ -13,15 +13,10 @@ El data set contiene las siguientes columnas de caracteristicas
  |mora|a presentado mora el cliente en un prestamo|asignado al sujeto|categorico object| string 3 categorias |
  |Vivienda|Tiene prestamo de vivienda el cliente|estado del sujeto|categorico object| string 3 categorias |
  |Consumo|Tiene prestamo de Consumo el cliente|estado del sujeto|categorico object| string 3 categorias |
- |
- |Contacto|Tipo de telefono de contacto del cliente|caracteristica del sujeto|categorico object| string 2 categorias |
- |
+ |Contacto|Tipo de telefono de contacto del cliente|caracteristica del sujeto|categorico object| string 2 categorias|
  |Mes|Mes de ultimo contacto con el cliente|campaña de marketing|categorico object| string 10 categorias |
- |
  |Dia|día del ultimo contacto con el cliente|campaña de marketing|categorico object| string 5 categorias |
- |
  |Campana|numero de contactos realizados con el cliente durante la actual campaña|campaña de marketing |numerico int 64| rango [1,39] |
- |
  | Dias_Ultima_Camp| numero de dias que ha pasado desde la ultima campaña sin contactar al cliente, si nunca a sido contactado 999|caracteristica de contacto del cliente|numerico int 64| rango [1,999]|
  | No_Contactos| numero de veces que ha sido contactado el cliente antes de esta campaña|caracteristica de contacto del cliente|numerico int 64| rango [0,7]|
  | Resultado_Anterior| resultado de la campaña de marketing sobre el cliente| propio de la campaña sobre el cliente|categorico object| string 3 categorias |
