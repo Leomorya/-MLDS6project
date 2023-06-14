@@ -1,6 +1,6 @@
 # ruta del modelo que se va a guardar PCA
-ruta_1 = "/home/leomorya/proyecto_final_metodologias/tdsp_template/scripts"
-ruta_2 = "/preprocessing/Modelos_utilizados_preprocesamiento"
+ruta_1 = "/home/leomorya/proyecto_final_metodologias/tdsp_template/src"
+ruta_2 = "/nombre_paquete/preprocessing/Modelos_utilizados_preprocesamiento"
 ruta_guarda = f"{ruta_1}{ruta_2}"
 
 # datos para guardar el modelo PCA 

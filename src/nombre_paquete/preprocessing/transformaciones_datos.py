@@ -13,13 +13,24 @@ import pandas as pd
 def transformaciones(df_prep_selec):
     df_transform = df_prep_selec.copy(deep=True)
     
+    """
+    Parametros: dataframe con los datos preprocesadodos y seleccionados 
+    
+        (aqui se realiza la transformación de los datos numericos con 
+        min_max_escaler y categoricos con one_hot_encoder,
+        debe tenerce en cuenta que la variable objetivo esta entre los datos)
+    
+    retorna: matriz de numpy con los datos transformado
+    
+    """
+    
     # transformación columnas numericas 
     # obtengo las columnas numericas y el dataframe numerico
     numeric = df_transform._get_numeric_data().columns
          
     # ruta para cargar modelo min_max_escaler 
-    ruta_1 = "/home/leomorya/proyecto_final_metodologias/tdsp_template/scripts"
-    ruta_2 = "/preprocessing/Modelos_utilizados_preprocesamiento"
+    ruta_1 = "/home/leomorya/proyecto_final_metodologias/tdsp_template/src"
+    ruta_2 = "/nombre_paquete/preprocessing/Modelos_utilizados_preprocesamiento"
     ruta_carga = f"{ruta_1}{ruta_2}"
     
     import joblib
