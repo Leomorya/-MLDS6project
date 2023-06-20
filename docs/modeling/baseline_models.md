@@ -32,7 +32,7 @@ Las métricas que se utilizaron para evaluar el modelo, fueron  precisión, reca
 |modelo base|clase|precisión|recall|f1_score|
 |:---:|:---|:---|:---|:---|
 |regresión logistica|positiva:1|0.33|0.64|0.44|
-|regresión logistica|negativa:1|0.95|0.84|0.89| 
+|regresión logistica|negativa:0|0.95|0.84|0.89| 
 
 ## Análisis de los resultados
 De la métrica f1_score se desprende la probabilidad de que al escojer un cliente que el modelo escoja o prediga en la clase positiva (1), tiene una probabilidad de 33% de pertenecer a dichas clase, lo que estas, un 22% mas alto que la probabilidad aleatoria la cual, es de 11%.  
