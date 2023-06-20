@@ -49,4 +49,4 @@ Del modelamiento base se obtuvieron las siguientes conclusiones:
 * Probar mas modelos a ver si se encuentra una m,ejora notable, tales como, arboles de decisión, maquinas de soporte y/o redes neuronales. 
 ## Referencias
 
-El notebook con el modelo base se encuentra en el  
+El notebook con el modelo base se encuentra en el siguinte link [modelo_base](https://github.com/Leomorya/-MLDS6project/blob/entrega_tres/scripts/training/modelo_linea_base.ipynb) 
