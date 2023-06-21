@@ -35,7 +35,7 @@ Las métricas que se utilizaron para evaluar el modelo, fueron  precisión, reca
 |regresión logistica|negativa:0|0.95|0.84|0.89| 
 
 ## Análisis de los resultados
-De la métrica f1_score se desprende la probabilidad de que al escojer un cliente que el modelo escoja o prediga en la clase positiva (1), tiene una probabilidad de 33% de pertenecer a dichas clase, lo que estas, un 22% mas alto que la probabilidad aleatoria la cual, es de 11%.  
+De la métrica presicion se desprende la probabilidad de que al escojer un cliente que el modelo escoja o prediga en la clase positiva (1), tiene una probabilidad de 33% de pertenecer a dichas clase, lo que estas, un 22% mas alto que la probabilidad aleatoria la cual, es de 11%.  
 
 
 ## Conclusiones
@@ -46,7 +46,7 @@ Del modelamiento base se obtuvieron las siguientes conclusiones:
 
 * La probabilidad aleatoria de que se contacte a un cliente y este acepte el credito es de p = 855/7623 = 0.11 osea del 11%, mientras que, con el modelo aumenta a p(m)= 544/1599 = 0.34 entonces, es del 33%, lo que es, una notable mejora.
 
-* Probar mas modelos a ver si se encuentra una m,ejora notable, tales como, arboles de decisión, maquinas de soporte y/o redes neuronales. 
+* Probar mas modelos a ver si se encuentra una mejora notable, tales como, arboles de decisión, maquinas de soporte y/o redes neuronales. 
 ## Referencias
 
 El notebook con el modelo base se encuentra en el siguinte link [modelo_base](https://github.com/Leomorya/-MLDS6project/blob/entrega_tres/scripts/training/modelo_linea_base.ipynb) 
