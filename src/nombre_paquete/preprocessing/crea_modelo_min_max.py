@@ -30,9 +30,11 @@ def min_max_train(df_prep):
     """
     
     #toma las caracteristicas categoricas 
-    numeric = df_prep._get_numeric_data().columns
+    numeric = df_prep._get_numeric_data().columns[:-1]
+    
     df_num = df_prep[numeric]
     df_num = df_num.drop("ID",axis=1)
+    display(df_num)
     
     import joblib
     from sklearn.preprocessing import MinMaxScaler
