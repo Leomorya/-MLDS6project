@@ -9,6 +9,6 @@ Teniendo en cuneta la infraestructura descrita anteriormente el costo del despli
 -CPU un computador básico cuesta alrededor de $1.500.000 pesos, su alquiler mensual alrededor de $120.000 pesos y el alquiler de una maquina virtual en amazon o google unos $32 pesos por hora.
 - El consto energético es bajo ya que serían unos 50 watts/hora en promedio
 - costo de mantenimiento unos $500.000 al mes 
-#Mantenimiento
+# Mantenimiento
 El modelo creado y la API en general no necesitan mantenimiento pero debe realizarse un monitoreo de mensual de su funcionamiento y de posibles drift de los datos o del modelo, para mantener la tasa de éxito de créditos al máximo.
 
