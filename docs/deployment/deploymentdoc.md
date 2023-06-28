@@ -12,12 +12,12 @@
 - **Requisitos de seguridad:** Al tratarse de datos previamente que an sido utilizados para examenes a candidatos de cientifico de datos, los datos pueden ser públicos y no necesitan seguridad  
 - **Diagrama de arquitectura:**
 
-![tcga_example](images/Arquitectura.png)
+![tcga_example](imagenes/flujo_del_despliege.jpg)
 
 ## Código de despliegue
 
 - **Archivo principal:** El codigo para despleigue del modelo se encuentra en *depliegue.py*, el cual, corre el API con FastAPI
-- **Rutas de acceso a los archivos:** El código puede encontrarse en *'src/nombre_paquete/deployment/despliegue.py'*
+- **Rutas de acceso a los archivos:** El código puede encontrarse en *'src/nombre_paquete/deployment/despliegue.py'*[link](https://github.com/Leomorya/-MLDS6project/blob/entrega_cuatro/src/nombre_paquete/deployment/despliegue.py)
 
 ## Documentación del despliegue
 
