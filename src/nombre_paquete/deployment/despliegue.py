@@ -7,12 +7,10 @@ import sys
 
 
 # colocamos la ruta de los paquetes a python 
-sys.path.append('/home/leomorya/proyecto_final_metodologias/tdsp_template/src/nombre_paquete/')
+sys.path.append('../')
 
 #cargamos el modelo 
-ruta_1 = "/home/leomorya/proyecto_final_metodologias/tdsp_template/src"
-ruta_2 = "/nombre_paquete/models"
-ruta_guarda = f"{ruta_1}{ruta_2}"
+ruta_guarda = r"../models"
 modelo=joblib.load(f'{ruta_guarda}/modelo_random_forest.pkl')
 
 
