@@ -28,11 +28,15 @@ Sin embargo se vera la matriz de confusión y las métricas accuracy, precisión
 Las métricas que se utilizaron para evaluar el modelo, fueron  precisión, recall y f1_score, siendo esta ultima la que, mostro mejores resultados. 
 
 ### Resultados de evaluación
+Las métricas obtenidas fueron:
 
 |modelo base|clase|precisión|recall|f1_score|
 |:---:|:---|:---|:---|:---|
 |regresión logistica|positiva:1|0.33|0.64|0.44|
 |regresión logistica|negativa:0|0.95|0.84|0.89| 
+
+Y la siguiente matriz de confusión: 
+![tcga_example](imagenes/matriz_confusion_modelbase.png)
 
 ## Análisis de los resultados
 De la métrica presicion se desprende la probabilidad de que al escojer un cliente que el modelo escoja o prediga en la clase positiva (1), tiene una probabilidad de 33% de pertenecer a dichas clase, lo que estas, un 22% mas alto que la probabilidad aleatoria la cual, es de 11%.  
