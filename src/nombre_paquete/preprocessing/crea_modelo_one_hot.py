@@ -1,7 +1,6 @@
 # ruta de la transformación que se va a guardar one hot
-ruta_1 = "/home/leomorya/proyecto_final_metodologias/tdsp_template/src"
-ruta_2 = "/nombre_paquete/preprocessing/Modelos_utilizados_preprocesamiento"
-ruta_guarda = f"{ruta_1}{ruta_2}"
+
+ruta_guarda = r"./Modelos_utilizados_preprocesamiento"
 # datos para guardar el modelo one hot
 
 # preprocesamiento
@@ -10,7 +9,7 @@ import numpy as np
 
 #Carga de datos
 # ruta de los datos
-ruta=r"/home/leomorya/proyecto_final_metodologias/data/datos_train_prep_selec.csv"
+ruta=r"../../../../data/datos_train_prep_selec.csv"
 
 # cargando los datos 
 df_train_prep_selec=pd.read_csv(ruta)

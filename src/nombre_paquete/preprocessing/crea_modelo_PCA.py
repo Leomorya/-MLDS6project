@@ -1,7 +1,6 @@
 # ruta del modelo que se va a guardar PCA
-ruta_1 = "/home/leomorya/proyecto_final_metodologias/tdsp_template/src"
-ruta_2 = "/nombre_paquete/preprocessing/Modelos_utilizados_preprocesamiento"
-ruta_guarda = f"{ruta_1}{ruta_2}"
+
+ruta_guarda = r"./Modelos_utilizados_preprocesamiento"
 
 # datos para guardar el modelo PCA 
 
@@ -11,7 +10,7 @@ import numpy as np
 
 #Carga de datos
 # ruta de los datos
-ruta=r"/home/leomorya/proyecto_final_metodologias/data/datos_preprocesados_train.csv"
+ruta=r"../../../../data/datos_preprocesados_train.csv"
 
 # cargando los datos 
 df_train_prep=pd.read_csv(ruta)

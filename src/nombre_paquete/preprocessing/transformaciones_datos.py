@@ -8,13 +8,16 @@
 
 import numpy as np
 import pandas as pd
+import os
+ruta_actual = os.getcwd()
+ruta_1=ruta_actual.split("/tdsp_template")[0]
 
-
-def transformaciones(df_prep_selec):
+def transformaciones(df_prep_selec,train=""):
     df_transform = df_prep_selec.copy(deep=True)
     
     """
     Parametros: dataframe con los datos preprocesadodos y seleccionados 
+                train= datos con etiquetas o label, por defecto sin train =""    
     
         (aqui se realiza la transformación de los datos numericos con 
         min_max_escaler y categoricos con one_hot_encoder,
@@ -29,16 +32,20 @@ def transformaciones(df_prep_selec):
     numeric = df_transform._get_numeric_data().columns
          
     # ruta para cargar modelo min_max_escaler 
-    ruta_1 = "/home/leomorya/proyecto_final_metodologias/tdsp_template/src"
-    ruta_2 = "/nombre_paquete/preprocessing/Modelos_utilizados_preprocesamiento"
+    
+    #ruta_1 = "/home/leomorya/proyecto_final_metodologias"#ruta personal a cambiar
+    ruta_2 = "/tdsp_template/src/nombre_paquete/preprocessing/Modelos_utilizados_preprocesamiento"
     ruta_carga = f"{ruta_1}{ruta_2}"
     
     import joblib
     # carga el modelo min_max
     min_max = joblib.load(f"{ruta_carga}/modelo_min_max.pkl")    
                
-    # obtiene la matriz min_max sin el ID
-    matrix_numeric = min_max.transform(df_transform[numeric[1:]])
+    # obtiene la matriz min_max sin el ID y sin labels
+    if train=="train":
+        matrix_numeric = min_max.transform(df_transform[numeric[1:-1]])
+    else:
+        matrix_numeric = min_max.transform(df_transform[numeric[1:]])
     
     #trasnformación de las columnas categoricas
     categoricas=df_transform.select_dtypes('object').columns
@@ -51,6 +58,12 @@ def transformaciones(df_prep_selec):
     # obtiene la matriz one_hot_escaler
     matrix_categ = one_hot.transform(df_transform[categoricas]).toarray()
     
-    matrix_final = np.concatenate([matrix_categ,matrix_numeric],axis=1)      
+    if train=="train":
+        labels = df_prep_selec[numeric[-1:]].values
+        matrix_final = np.concatenate([matrix_categ,matrix_numeric,labels]
+                                  ,axis=1)      
+    else:
+        matrix_final = np.concatenate([matrix_categ,matrix_numeric],axis=1)      
     
     return matrix_final
+
