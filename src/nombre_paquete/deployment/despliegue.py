@@ -46,6 +46,9 @@ async def cargar_archivo(file: UploadFile = File(...)):
     
     # Realizar la inferencia utilizando el modelo cargado
     resultado = modelo.predict(datos_tranformados)
-
+    
+    clase_positiva_1=resultado.sum()
+    clase_negativa_0=len(datos_tranformados)-clase_positiva_1
+    
     # Devolver el resultado
-    return {"resultado": resultado.tolist()}
+    return {"resultado": resultado.tolist(),"clase_positiva_1":clase_positiva_1,"clase_negativa_0":clase_negativa_0}
